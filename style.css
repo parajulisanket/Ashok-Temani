@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* #f4f6f9 */
+
+:root {
+  --primary: white;
+  --secondary: #ffffff;
+  --accent: #f70303;
+  --green: #016400;
+  --text: #111111;
+  --muted: rgba(17, 17, 17, 0.65);
+}
+
+html,
+body {
+  font-family: "Mukta", sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+/* keep: scrollbar hide */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.btn {
+  background-color: var(--green);
+  color: var(--secondary);
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 200ms ease;
+  text-transform: uppercase;
+}
+
+.nav {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.nav:hover {
+  color: rgba(247, 3, 3, 0.7);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.05;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+p {
+  color: rgb(107, 114, 128);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  word-spacing: 2px;
+}

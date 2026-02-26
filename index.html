@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="./assets/flag.jpeg" />
+    <title>Ashok Temani</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="relative min-h-[100vh] overflow-hidden">
+      <div
+        id="heroBg"
+        class="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
+        style="background-image: url(&quot;./assets/bg-hero-section.png&quot;)"
+      ></div>
+
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"
+      ></div>
+
+      <!-- NAVBAR -->
+      <nav
+        id="mainNav"
+        class="fixed top-0 left-0 w-full z-50 bg-transparent text-white nav-glass transition-all duration-300"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <div class="flex h-[78px] items-center justify-between">
+            <!-- Left: Logo -->
+            <a
+              href="./index.html"
+              class="flex items-center gap-3 transition-colors duration-300"
+            >
+              <div
+                class="h-14 w-14 rounded-md text-white grid place-items-center"
+              >
+                <img src="./assets/flag.jpeg" alt="Ashok Temani Flag" />
+              </div>
+              <div class="leading-tight">
+                <div class="text-current font-bold tracking-wide text-xl">
+                  अशोक टेमानी
+                </div>
+                <div class="text-current tracking-wide text-xs">
+                  प्रतिनिधि सभा उमेद्वार क्षेत्र नो. २, पर्सा
+                </div>
+              </div>
+            </a>
+
+            <!-- Desktop menu -->
+            <div class="hidden lg:flex items-center gap-8">
+              <a
+                class="nav text-current transition-colors duration-300"
+                href="#intro"
+                >परिचय</a
+              >
+
+              <a
+                class="nav text-current transition-colors duration-300"
+                href="#campaign"
+              >
+                अभियान</a
+              >
+              <a
+                class="nav text-current transition-colors duration-300"
+                href="#agenda"
+                >प्रतिबद्धताका क्षेत्रहरू</a
+              >
+            </div>
+
+            <!-- Right button -->
+            <div class="hidden lg:flex items-center gap-5">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center btn"
+              >
+                सम्पर्क
+              </a>
+            </div>
+
+            <!-- Mobile controls -->
+            <div class="flex lg:hidden items-center gap-4">
+              <button
+                id="mobileMenuBtn"
+                class="text-current/90 hover:text-current transition-colors duration-300"
+                type="button"
+                aria-label="Open menu"
+              >
+                <i class="fa-solid fa-bars text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu panel -->
+        <div
+          id="mobileMenu"
+          class="lg:hidden hidden border-t border-white/10 bg-white max-h-[calc(100vh-78px)] overflow-y-auto"
+        >
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 space-y-2">
+            <a class="block text-black font-semibold py-2" href="#intro"
+              >परिचय</a
+            >
+
+            <a class="block text-black font-semibold py-2" href="#campaign"
+              >अभियान</a
+            >
+            <a class="block text-black/90 font-semibold py-2" href="#agenda"
+              >प्रतिबद्धताका क्षेत्रहरू</a
+            >
+
+            <a
+              href="#contact"
+              class="mt-3 inline-flex w-full items-center justify-center btn"
+              >सम्पर्क</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO CONTENT -->
+      <section class="relative z-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <div class="min-h-[calc(100vh-78px)] flex items-center">
+            <div
+              class="max-w-4xl py-20 space-y-6 text-center md:text-left mx-auto md:mx-0"
+            >
+              <h1
+                id="heroTitle"
+                class="text-white font-bold tracking-tight text-4xl md:text-6xl lg:text-[82px] leading-[1.625]"
+              >
+                राजनीति मेरो
+                <span class="text-[var(--primary)]">लक्ष्य </span><br />
+                होइन,<br class="hidden md:block" />
+                विकास मेरो
+                <span class="text-[var(--primary)]"> जिम्मेवारी </span>
+                हो।
+              </h1>
+
+              <!-- Supportive Line -->
+              <p
+                class="text-white/80 text-lg md:text-xl italic leading-relaxed max-w-xl"
+              >
+                "इमानदार नेतृत्व, स्पष्ट दृष्टि, पारदर्शी शासन र परिणाममुखी
+                कार्यशैलीमार्फत पर्सालाई समृद्ध, सक्षम र अवसरयुक्त भविष्यतर्फ
+                अघि बढाउने हाम्रो प्रतिबद्धता।"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- goal -->
+    <section
+      class="relative py-12 md:py-0 md:absolute md:left-0 md:right-0 md:-bottom-20 z-[40]"
+    >
+      <div class="mx-auto max-w-7xl px-4 md:px-6 bg-white shadow-md">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="py-10 px-8 text-center space-y-3 border-b md:border-b-0 md:border-r border-gray-200"
+          >
+            <h3 class="subtitle">अनुभव</h3>
+
+            <p class="leading-relaxed">३० वर्ष उद्योग, व्यापार र व्यवस्थापन</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="py-10 px-8 text-center space-y-3 border-b md:border-b-0 md:border-r border-gray-200"
+          >
+            <h3 class="subtitle">दृष्टि</h3>
+
+            <p class="leading-relaxed">वीरगञ्ज केन्द्रित आर्थिक समृद्धि</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="py-10 px-8 text-center space-y-3">
+            <h3 class="subtitle">प्रतिबद्धता</h3>
+
+            <p class="leading-relaxed">परिणाम देखिने काम</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- intro -->
+    <section id="intro" class="mt-0 md:mt-20 py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- LEFT: TEXT -->
+          <div class="space-y-6 text-center md:text-left">
+            <h2 class="title">परिचय</h2>
+
+            <p>
+              नमस्ते। म अशोक कुमार टेमानी। पर्सा क्षेत्र नं. २ बाट प्रतिनिधि सभा
+              सदस्यको उम्मेदवार। म राजनीति गर्न आएको होइन, म काम गर्न आएको हुँ।
+              ३० वर्ष उद्योग, व्यापार र व्यवस्थापन क्षेत्रमा बिताएको अनुभवलाई अब
+              परिणाममा रूपान्तरण गर्ने समय आएको छ। मेरो विश्वास सरल छ — विकास
+              भाषणबाट होइन, स्पष्ट योजना र परिणाम देखिने कामबाट हुन्छ। पर्सा र
+              विशेष गरी वीरगञ्जलाई आर्थिक समृद्धिको केन्द्र बनाउने मेरो दृष्टि
+              छ। शिक्षा र सीप विकासलाई रोजगारीसँग जोड्नु, उद्योगमैत्री वातावरण
+              निर्माण गर्नु, डिजिटल सुशासन लागू गर्नु र पारदर्शिता सुनिश्चित
+              गर्नु आजको आवश्यकता हो। राजनीति मेरो लक्ष्य होइन। विकास मेरो
+              जिम्मेवारी हो।
+            </p>
+
+            <p class="text-left md:text-right">— अशोक कुमार टेमानी</p>
+          </div>
+
+          <div class="flex justify-center md:justify-end">
+            <div
+              class="w-full max-w-md md:max-w-lg h-[420px] md:h-[520px] overflow-hidden shadow rounded-xl"
+            >
+              <img
+                src="./assets/abt.png"
+                alt="Ashok Kumar Temani"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- campaings -->
+    <section id="campaign" class="py-16 bg-[#f4f6f9]">
+      <div class="mx-auto max-w-7xl px-4 md:px-0">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <!-- Left text -->
+          <div class="lg:col-span-4">
+            <h2
+              class="text-[var(--accent)] font-bold tracking-wide text-4xl sm:text-5xl lg:text-6xl leading-[1.05]"
+            >
+              हाम्रो <br />
+              अभियान <br />
+              क्षणहरू <br />
+              अन्वेषण गर्नुहोस्
+            </h2>
+
+            <div class="mt-10 flex items-center gap-4">
+              <button
+                id="campPrev"
+                type="button"
+                class="h-12 w-12 rounded-md bg-white shadow grid place-items-center hover:shadow-md transition"
+                aria-label="Previous"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+
+              <button
+                id="campNext"
+                type="button"
+                class="h-12 w-12 rounded-md bg-white shadow grid place-items-center hover:shadow-md transition"
+                aria-label="Next"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right carousel -->
+          <div class="lg:col-span-8">
+            <div class="relative overflow-hidden">
+              <!-- Track -->
+              <div
+                id="campTrack"
+                class="flex gap-6 transition-transform duration-500 ease-out will-change-transform"
+              >
+                <!-- Slide 1 -->
+                <a
+                  href="#"
+                  class="camp-slide shrink-0 w-[82%] sm:w-[60%] lg:w-[48%] xl:w-[40%]"
+                >
+                  <div
+                    class="bg-white shadow-sm border border-gray-200 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/post1-2-1.png"
+                      alt="Campaign image 1"
+                      class="w-full h-[420px] object-cover"
+                    />
+                  </div>
+                </a>
+
+                <!-- Slide 2 -->
+                <a
+                  href="#"
+                  class="camp-slide shrink-0 w-[82%] sm:w-[60%] lg:w-[48%] xl:w-[40%]"
+                >
+                  <div
+                    class="bg-white shadow-sm border border-gray-200 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/post1-2-4.png"
+                      alt="Campaign image 2"
+                      class="w-full h-[420px] object-cover"
+                    />
+                  </div>
+                </a>
+
+                <!-- Slide 3 -->
+                <a
+                  href="#"
+                  class="camp-slide shrink-0 w-[82%] sm:w-[60%] lg:w-[48%] xl:w-[40%]"
+                >
+                  <div
+                    class="bg-white shadow-sm border border-gray-200 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/post2-1-30.png"
+                      alt="Campaign image 3"
+                      class="w-full h-[420px] object-cover"
+                    />
+                  </div>
+                </a>
+
+                <!-- Slide 4 -->
+                <a
+                  href="#"
+                  class="camp-slide shrink-0 w-[82%] sm:w-[60%] lg:w-[48%] xl:w-[40%]"
+                >
+                  <div
+                    class="bg-white shadow-sm border border-gray-200 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/post2-2-1.png"
+                      alt="Campaign image 4"
+                      class="w-full h-[420px] object-cover"
+                    />
+                  </div>
+                </a>
+                <!-- Slide 5 -->
+                <a
+                  href="#"
+                  class="camp-slide shrink-0 w-[82%] sm:w-[60%] lg:w-[48%] xl:w-[40%]"
+                >
+                  <div
+                    class="bg-white shadow-sm border border-gray-200 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/post3-2-1.png"
+                      alt="Campaign image 4"
+                      class="w-full h-[420px] object-cover"
+                    />
+                  </div>
+                </a>
+                <!-- Slide 6 -->
+                <a
+                  href="#"
+                  class="camp-slide shrink-0 w-[82%] sm:w-[60%] lg:w-[48%] xl:w-[40%]"
+                >
+                  <div
+                    class="bg-white shadow-sm border border-gray-200 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/post3-2-4.png"
+                      alt="Campaign image 4"
+                      class="w-full h-[420px] object-cover"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION  -->
+    <section class="relative py-16 overflow-hidden bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 py-12">
+        <!-- Top icon -->
+        <div class="flex justify-center mb-10">
+          <div class="h-10 w-14 overflow-hidden shadow-sm">
+            <img
+              src="./assets/flag.jpeg"
+              alt="Flag"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="relative flex items-center justify-center">
+          <!-- Center text -->
+          <div class="text-center max-w-4xl">
+            <h2
+              class="text-[var(--accent)] font-bold tracking-wide text-4xl md:text-5xl"
+            >
+              नेतृत्व। अनुभव। मूल्यमान्यता।
+            </h2>
+
+            <div
+              class="mt-8 text-[#0A1F44] tracking-[0.22em] uppercase text-sm md:text-base"
+            >
+              Vote for
+              <span class="font-semibold tracking-wider">
+                अशोक कुमार टेमानी
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- agenda Section -->
+    <section id="agenda" class="py-16 bg-[#f4f6f9]">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <!-- Section Header -->
+        <div class="text-left mb-14">
+          <h2 class="title">पर्सा क्षेत्र नं. २ मा विकासका प्राथमिकताहरू</h2>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1: शिक्षा सुधार र सीप विकास (Banner 2) -->
+          <div
+            class="group relative bg-white shadow p-8 overflow-hidden transition duration-500 hover:shadow-lg"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500"
+            >
+              <img
+                src="./assets/flag.jpeg"
+                alt="Flag"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div class="flex justify-between items-start gap-4">
+                <h3 class="text-2xl font-bold text-gray-900">
+                  शिक्षा सुधार र सीप विकास
+                </h3>
+                <i class="ph ph-graduation-cap text-3xl text-[#016400]/50"></i>
+              </div>
+
+              <p class="text-gray-700 font-semibold leading-relaxed">
+                शिक्षा बिना सीप हुँदैन, सीप बिना रोजगारी हुँदैन।
+              </p>
+
+              <ol class="text-gray-600 leading-relaxed space-y-3">
+                <li>
+                  <span class="text-[#016400] font-semibold">१.</span>
+                  <span class="font-semibold text-gray-800"
+                    >प्राविधिक शिक्षा:</span
+                  >
+                  उद्योग–आधारित सीप तालिम विस्तार
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">२.</span>
+                  <span class="font-semibold text-gray-800"
+                    >स्कुल–उद्योग सहकार्य:</span
+                  >
+                  पढाइसँगै काम सिक्ने प्रणाली
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">३.</span>
+                  <span class="font-semibold text-gray-800"
+                    >डिजिटल शिक्षा:</span
+                  >
+                  ICT आधारित सिकाइ पद्धति
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">४.</span>
+                  <span class="font-semibold text-gray-800">समान पहुँच:</span>
+                  शहर र गाउँका विद्यार्थीलाई समान अवसर
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Card 2: डिजिटल सुशासन र पारदर्शिता (Banner 3) -->
+          <div
+            class="group relative bg-white shadow p-8 overflow-hidden transition duration-500 hover:shadow-lg"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500"
+            >
+              <img
+                src="./assets/flag.jpeg"
+                alt="Flag"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div class="flex justify-between items-start gap-4">
+                <h3 class="text-2xl font-bold text-gray-900">
+                  डिजिटल सुशासन र पारदर्शिता
+                </h3>
+                <i class="ph ph-shield-check text-3xl text-[#016400]/50"></i>
+              </div>
+
+              <p class="text-gray-700 font-semibold leading-relaxed">
+                नाप्न नसकिने शासन, सुधार्न पनि सकिँदैन।
+              </p>
+
+              <ol class="text-gray-600 leading-relaxed space-y-3">
+                <li>
+                  <span class="text-[#016400] font-semibold">१.</span>
+                  <span class="font-semibold text-gray-800"
+                    >KPI आधारित सरकार:</span
+                  >
+                  हरेक कार्यालयको कामको मापन
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">२.</span>
+                  <span class="font-semibold text-gray-800"
+                    >पूर्ण डिजिटलाइजेसन:</span
+                  >
+                  कागज होइन, प्रणाली
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">३.</span>
+                  <span class="font-semibold text-gray-800"
+                    >One-Window सेवा:</span
+                  >
+                  नागरिक सेवा एकै ठाउँ, झन्झट बिना
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">४.</span>
+                  <span class="font-semibold text-gray-800">पारदर्शिता:</span>
+                  बजेट र निर्णय सार्वजनिक
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Card 3: युवा, रोजगारी र अर्थतन्त्र (Banner 4) -->
+          <div
+            class="group relative bg-white shadow p-8 overflow-hidden transition duration-500 hover:shadow-lg"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500"
+            >
+              <img
+                src="./assets/flag.jpeg"
+                alt="Flag"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div class="flex justify-between items-start gap-4">
+                <h3 class="text-2xl font-bold text-gray-900">
+                  युवा, रोजगारी र अर्थतन्त्र
+                </h3>
+                <i class="ph ph-briefcase text-3xl text-[#016400]/50"></i>
+              </div>
+
+              <p class="text-gray-700 font-semibold leading-relaxed">
+                रोजगारी बिना देश अघि बढ्दैन।
+              </p>
+
+              <ol class="text-gray-600 leading-relaxed space-y-3">
+                <li>
+                  <span class="text-[#016400] font-semibold">१.</span>
+                  <span class="font-semibold text-gray-800"
+                    >स्थानीय रोजगारी:</span
+                  >
+                  उद्योग र उद्यम विस्तार
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">२.</span>
+                  <span class="font-semibold text-gray-800">युवा उद्यम:</span>
+                  स्टार्टअप र MSME सहयोग
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">३.</span>
+                  <span class="font-semibold text-gray-800">सीप + पूँजी:</span>
+                  आत्मनिर्भर युवाका लागि सहुलियत ऋण
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">४.</span>
+                  <span class="font-semibold text-gray-800"
+                    >विदेश होइन, विकल्प:</span
+                  >
+                  यहीँ काम गर्ने वातावरण
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Card 4: वीरगञ्ज – आर्थिक राजधानी (Banner 5) -->
+          <div
+            class="group relative bg-white shadow p-8 overflow-hidden transition duration-500 hover:shadow-lg"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500"
+            >
+              <img
+                src="./assets/flag.jpeg"
+                alt="Flag"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div class="flex justify-between items-start gap-4">
+                <h3 class="text-2xl font-bold text-gray-900">
+                  वीरगञ्ज – आर्थिक राजधानी
+                </h3>
+                <i class="ph ph-buildings text-3xl text-[#016400]/50"></i>
+              </div>
+
+              <p class="text-gray-700 font-semibold leading-relaxed">
+                वीरगञ्ज व्यापारको ढोका मात्र होइन, अर्थतन्त्रको इन्जिन हो।
+              </p>
+
+              <ol class="text-gray-600 leading-relaxed space-y-3">
+                <li>
+                  <span class="text-[#016400] font-semibold">१.</span>
+                  <span class="font-semibold text-gray-800"
+                    >औद्योगिक पूर्वाधार:</span
+                  >
+                  उद्योगमैत्री नीति
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">२.</span>
+                  <span class="font-semibold text-gray-800"
+                    >लजिस्टिक्स हब:</span
+                  >
+                  भन्सार, यातायात र गोदाम सुधार
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">३.</span>
+                  <span class="font-semibold text-gray-800"
+                    >निजी–सरकार साझेदारी:</span
+                  >
+                  लगानी आकर्षण
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">४.</span>
+                  <span class="font-semibold text-gray-800"
+                    >रोजगारी सिर्जना:</span
+                  >
+                  क्षेत्रीय आर्थिक वृद्धि
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Card 5: कृषि र किसान (Banner 6) -->
+          <div
+            class="group relative bg-white shadow p-8 overflow-hidden transition duration-500 hover:shadow-lg"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500"
+            >
+              <img
+                src="./assets/flag.jpeg"
+                alt="Flag"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div class="flex justify-between items-start gap-4">
+                <h3 class="text-2xl font-bold text-gray-900">कृषि र किसान</h3>
+                <i class="ph ph-plant text-3xl text-[#016400]/50"></i>
+              </div>
+
+              <p class="text-gray-700 font-semibold leading-relaxed">
+                किसान बलियो भए मात्र, अर्थतन्त्र बलियो हुन्छ।
+              </p>
+
+              <ol class="text-gray-600 leading-relaxed space-y-3">
+                <li>
+                  <span class="text-[#016400] font-semibold">१.</span>
+                  <span class="font-semibold text-gray-800"
+                    >सिँचाइ र भण्डारण:</span
+                  >
+                  Cold Storage र आधुनिक प्रविधि
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">२.</span>
+                  <span class="font-semibold text-gray-800"
+                    >बजार सुनिश्चितता:</span
+                  >
+                  उत्पादनको उचित मूल्य
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">३.</span>
+                  <span class="font-semibold text-gray-800"
+                    >मूल्य श्रृंखला विकास:</span
+                  >
+                  खेतदेखि बजारसम्म
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">४.</span>
+                  <span class="font-semibold text-gray-800">कृषि उद्यम:</span>
+                  युवालाई कृषि पेशातर्फ आकर्षण
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Card 6: स्वास्थ्य र सामाजिक सुरक्षा (Banner 7) -->
+          <div
+            class="group relative bg-white shadow p-8 overflow-hidden transition duration-500 hover:shadow-lg"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500"
+            >
+              <img
+                src="./assets/flag.jpeg"
+                alt="Flag"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div class="flex justify-between items-start gap-4">
+                <h3 class="text-2xl font-bold text-gray-900">
+                  स्वास्थ्य र सामाजिक सुरक्षा
+                </h3>
+                <i class="ph ph-heartbeat text-3xl text-[#016400]/50"></i>
+              </div>
+
+              <p class="text-gray-700 font-semibold leading-relaxed">
+                स्वास्थ्य सेवा सुविधा होइन, अधिकार हो।
+              </p>
+
+              <ol class="text-gray-600 leading-relaxed space-y-3">
+                <li>
+                  <span class="text-[#016400] font-semibold">१.</span>
+                  <span class="font-semibold text-gray-800"
+                    >स्वास्थ्य केन्द्र सुदृढीकरण:</span
+                  >
+                  स्थानीय सेवा विस्तार
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">२.</span>
+                  <span class="font-semibold text-gray-800"
+                    >आधुनिक उपकरण र जनशक्ति:</span
+                  >
+                  गुणस्तरीय उपचार
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">३.</span>
+                  <span class="font-semibold text-gray-800"
+                    >गरिब र श्रमिकमैत्री नीति:</span
+                  >
+                  पहुँचयोग्य सेवा
+                </li>
+                <li>
+                  <span class="text-[#016400] font-semibold">४.</span>
+                  <span class="font-semibold text-gray-800"
+                    >रोकथाममुखी प्रणाली:</span
+                  >
+                  रोग लाग्न नदिनेतर्फ जोड
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16" id="contact">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h2 class="title">सम्पर्क गर्नुहोस्</h2>
+        </div>
+
+        <!-- Form -->
+        <div class="bg-white shadow-md rounded-xl p-8">
+          <form action="#" method="POST" class="space-y-6">
+            <!-- Row 1: First & Last Name -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  पहिलो नाम
+                </label>
+                <input
+                  type="text"
+                  name="first_name"
+                  required
+                  class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF5A09]"
+                  placeholder="पहिलो नाम प्रविष्ट गर्नुहोस्"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  अन्तिम नाम
+                </label>
+                <input
+                  type="text"
+                  name="last_name"
+                  required
+                  class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF5A09]"
+                  placeholder="अन्तिम नाम प्रविष्ट गर्नुहोस्"
+                />
+              </div>
+            </div>
+
+            <!-- Row 2: Email & Phone -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  इमेल ठेगाना
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF5A09]"
+                  placeholder="इमेल ठेगाना प्रविष्ट गर्नुहोस्"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  फोन नम्बर
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF5A09]"
+                  placeholder="फोन नम्बर प्रविष्ट गर्नुहोस्"
+                />
+              </div>
+            </div>
+
+            <!-- Row 3: Message -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">
+                सन्देश
+              </label>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF5A09]"
+                placeholder="तपाईंको सन्देश यहाँ प्रविष्ट गर्नुहोस्"
+              ></textarea>
+            </div>
+
+            <!-- Button -->
+            <div class="flex justify-center">
+              <button type="submit" class="w-fit btn">सन्देश पठाउनुहोस्</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- vote for temani -->
+    <section class="py-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div
+          class="rounded-2xl border border-gray-200 bg-gradient-to-r from-[#F2F2F2] via-white to-[#FFFFFF] shadow-sm p-6 sm:p-8"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <!-- Left: symbol + text -->
+            <div class="flex items-center gap-5">
+              <div class="h-16 w-16 sm:h-20 sm:w-20 grid place-items-center">
+                <img
+                  src="./assets/flag.jpeg"
+                  alt="Election symbol"
+                  class="h-14 w-14 sm:h-20 sm:w-20 object-contain"
+                />
+              </div>
+
+              <div class="text-left">
+                <div class="mt-2 text-gray-700">
+                  Vote for <span class="font-semibold">जसपा (JSP)</span> —
+                  नेतृत्व। अनुभव। मूल्यमान्यताहरू।
+                </div>
+
+                <!-- Count + message -->
+                <div class="mt-3 flex flex-wrap items-center gap-3">
+                  <div class="text-sm text-gray-700">
+                    Vote Count:
+                    <span id="voteCount" class="font-bold text-gray-900"
+                      >0</span
+                    >
+                  </div>
+
+                  <div
+                    id="voteMsg"
+                    class="hidden text-sm font-semibold text-green-700 bg-green-50 border border-green-200 px-3 py-1 rounded-full"
+                  >
+                    Thank you for voting!
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: button -->
+            <div class="shrink-0">
+              <button id="voteBtn" type="button" class="btn">
+                भोट गर्नुहोस्
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A1F44] text-white py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <!-- Top Row -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <!-- Left: Name -->
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl font-bold">अशोक कुमार टेमानी</h3>
+            <p class="text-lg text-white/70">
+              प्रतिनिधि सभा उम्मेदवार – क्षेत्र नं. २, पर्सा
+            </p>
+          </div>
+
+          <!-- Right: Links -->
+          <div class="flex gap-8 text-lg text-white/80">
+            <a href="#intro" class="hover:text-white transition">परिचय</a>
+            <a href="#campaign" class="hover:text-white transition">अभियान</a>
+            <a href="#agenda" class="hover:text-white transition">
+              प्रतिबद्धताका क्षेत्रहरू
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/20 mt-10 pt-6">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60"
+          >
+            <!-- Left: Copyright -->
+            <p class="text-center md:text-left">
+              © 2026 अशोक कुमार टेमानी. All Rights Reserved.
+            </p>
+
+            <!-- Right: Developer -->
+            <div class="flex items-center gap-2">
+              <span>Developed by</span>
+              <img
+                src="./assets/White Logo.png"
+                class="w-24 h-auto"
+                alt="Developer Logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
