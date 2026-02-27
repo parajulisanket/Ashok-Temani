@@ -98,7 +98,6 @@
 })();
 
 // vote count
-
 (function () {
   const btn = document.getElementById("voteBtn");
   const countEl = document.getElementById("voteCount");
@@ -106,11 +105,15 @@
 
   if (!btn || !countEl || !msgEl) return;
 
-  let count = 0;
+  //  Always start from 24387
+  let count = 24387;
+
+  // Ensure UI also shows correct starting value
+  countEl.textContent = count;
 
   btn.addEventListener("click", () => {
     count += 1;
-    countEl.textContent = String(count);
+    countEl.textContent = count;
 
     // show message
     msgEl.classList.remove("hidden");
